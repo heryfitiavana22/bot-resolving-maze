@@ -25,7 +25,7 @@ tablegame.render();
 const player = new Player(start, CELL_SIZE);
 const solver = SolverFactory.algorithm({
   maze,
-  type: AlgoSolver.BFS,
+  type: AlgoSolver.DFS,
 });
 solver.subscribe(async (params) => {
   await player.onNewPosition(params);
