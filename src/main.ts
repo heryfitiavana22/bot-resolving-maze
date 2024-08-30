@@ -1,6 +1,5 @@
 import "./style.css";
 import { TableGame } from "./models/table-game";
-import { Coordinate } from "./types/data-types";
 import { Player } from "./models/player";
 import { AlgoSolver, SolverFactory } from "./solver/solver-factory";
 import { CELL_SIZE } from "./constants";
@@ -18,7 +17,7 @@ const maze = new Maze([
   ["1", "0", "0", "0", "0", "0", "0", "0", "1", "1"],
   ["1", "1", "1", "1", "1", "1", "1", "0", "0", "E"],
 ]);
-const start: Coordinate = [0, 0];
+const start = maze.getStart();
 
 const tablegame = new TableGame(maze);
 tablegame.render();
