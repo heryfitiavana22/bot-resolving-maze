@@ -3,6 +3,9 @@
 A project for solving mazes using different algorithms.
 
 ### Demo
+
+[https://heryfitiavana22.github.io/bot-resolving-maze/](https://heryfitiavana22.github.io/bot-resolving-maze/)
+
 ![demo](./demo.gif)
 
 ### Features
